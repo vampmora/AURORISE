@@ -1,0 +1,191 @@
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    color:#fff;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+a{ 
+    text-decoration: none;
+     display: flex;  
+}
+
+::selection{
+    background-color: crimson;
+    color: #fff;
+}
+ 
+img{
+    pointer-events: none;
+}
+
+
+
+.landingPage{
+    display: flex;
+    align-items: center;
+   /* justify-content: center;*/
+   width: 100%;
+   height: 100%;
+   padding: 2rem;
+   flex-direction: column;
+}
+
+.top{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+     width:6.4rem  /*100px*/
+}
+
+.webName{
+    color:crimson;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.name{
+    color: crimson;
+    font-size: 1.4rem;
+    text-align: center;   /*maybe will remove*/
+}
+
+.navbar{
+   /* position: absolute;
+    right: 1rem;
+    top: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    writing-mode: vertical-lr;*/
+    position: absolute;
+    top:50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    writing-mode: vertical-lr;
+}
+
+ .link{
+   /* color:yellow;*/ color:#fff;
+    transition: all .2s ease-in-out;     
+}
+
+.link:hover{
+    color:crimson;
+    font-style: italic;
+    /*text-decoration: underline;*/
+}
+
+.hero{
+     position: absolute;
+     bottom: 0;
+     z-index: -1;
+     max-width: 50%;
+}
+
+.hero img{
+    max-width: 100%;
+}
+
+.bottomLeft{
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+}
+
+.job {
+    font-size: 1.5rem;
+   /* color: crimson;*/
+}
+
+.location{
+    font-size: 1.3rem;
+    color: lightgray; /*#ccc*/
+}
+
+.location span{
+    color: crimson
+}
+
+.bottomRight{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap:2rem;
+     position: absolute;
+     right: 2rem;
+     bottom: 2rem;
+}
+
+i{
+    color:lightgray;
+    font-size: 1.4rem;
+    transition: all ease-in-out .3s;
+}
+
+i:hover{
+    color: crimson;
+}
+
+/*media*/
+
+@media screen and (max-width:768px) {
+    .name p{
+        /*color:yellow;*/
+        opacity:0;    /*display:none*/
+    }
+
+    .hero{
+        top:50%;
+        transform: translateY(-50%);
+    }
+
+    .bottomLeft{
+        bottom: 6rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .hero{
+        top:19rem
+    }
+    .hero img{
+        opacity: 1;   /*display:none*/
+        bottom:2%;
+    }
+}
+
+
+
+
+
+
+
