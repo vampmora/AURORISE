@@ -15,20 +15,16 @@ $(document).ready(()=>{
 })
 
 
-// $(document).ready(()=>{
-//     $('.name    span').lettering();
-//     let tl = gsap.timeline();
-//     tl.from('.name  span  ',  {
-//         x:-20,
-//         stagger: .1,
-//         duration:1,
-//         opacity:0
-//     })
-// })
-
-
-
-
+$(document).ready(()=>{
+    $('.name  span').lettering();
+    let tl = gsap.timeline();
+    tl.from('.name  span  ',  {
+        x:-20,
+        stagger: .1,
+        duration:1,
+        opacity:0
+    })
+})
 
 
 
