@@ -43,7 +43,7 @@ img{
    flex-direction: column;
 }
 
-.top{
+.head{
      display: flex;
      align-items: center;
      justify-content: space-between;
